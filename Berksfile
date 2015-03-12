@@ -4,4 +4,4 @@ metadata
 
 source "https://api.berkshelf.com"
 cookbook "newrelic"
-cookbook 'wkhtmltopdf-update', '~> 0.3.1'
+cookbook 'wkhtmltopdf', '~> 0.2.0'

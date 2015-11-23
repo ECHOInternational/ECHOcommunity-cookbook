@@ -1,3 +1,5 @@
+cookbook 'opsworks_postgresql', path: './opsworks_postgresql'
+
 source "https://supermarket.getchef.com"
 
 metadata

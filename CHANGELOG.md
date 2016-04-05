@@ -1,3 +1,6 @@
+# 0.2.0
+Added fonts recipes for Burmese, Khmer, and Thai
+
 # 0.1.5
 Changed recipe for WKHTMLTOPDF to support 0.12.2.1
 

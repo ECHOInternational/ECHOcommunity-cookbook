@@ -18,14 +18,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   #   $ vagrant plugin install vagrant-omnibus
   #
-  if Vagrant.has_plugin?
+  if Vagrant.has_plugin? 'vagrant-omnibus'
     config.omnibus.chef_version = 'latest'
   end
 
   # Every Vagrant virtual environment requires a box to build off of.
   # If this value is a shorthand to a box in Vagrant Cloud then
   # config.vm.box_url doesn't need to be specified.
-  config.vm.box = 'chef/ubuntu-14.04'
+  config.vm.box = 'bento/ubuntu-14.04'
 
 
   # Assign this VM to a host-only network IP, allowing you to access it
@@ -84,7 +84,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     }
 
     chef.run_list = [
-      'recipe[ECHOcommunity-cookbook::default]'
+      'recipe[ECHOcommunity-cookbook::fonts-thai]',
+      'recipe[ECHOcommunity-cookbook::fonts-khmer]',
+      'recipe[ECHOcommunity-cookbook::fonts-burmese]'
     ]
   end
 end

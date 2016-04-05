@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: ECHOcommunity-cookbook
-# Recipe:: fonts-thai
+# Recipe:: fonts-khmer
 #
 # Copyright (C) 2016 Nate Flood (ECHO Inc.)
 #
@@ -10,8 +10,8 @@ directory '/usr/share/fonts' do
   action :create
 end
 
-remote_file "/usr/share/fonts/Kinnari.ttf" do
-  source "https://github.com/ECHOInternational/ECHOcommunity-cookbook/raw/master/fonts/thai/Kinnari.ttf"
+remote_file "/usr/share/fonts/Battambang-Regular.ttf" do
+  source "https://github.com/ECHOInternational/ECHOcommunity-cookbook/raw/master/fonts/khmer/Battambang-Regular.ttf"
   mode '0644'
   action :create_if_missing
 end

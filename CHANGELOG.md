@@ -1,3 +1,6 @@
+# 0.1.5
+Changed recipe for WKHTMLTOPDF to support 0.12.2.1
+
 # 0.1.4
 Added overrides to fix Postgresql bug.
 
